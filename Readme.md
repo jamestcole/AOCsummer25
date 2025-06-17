@@ -6,6 +6,15 @@ https://adventofcode.com/2021/day/1
 
 follow instructions and sign up
 
+## Add your Code
+
+# add commit and push your code
+git add .         
+git commit -m "read"    
+git push origin your-branch-name
+
+
+
 ## How to Merge Your Branch with Main
 
 ### Method 1: Local Merge (Quick)
