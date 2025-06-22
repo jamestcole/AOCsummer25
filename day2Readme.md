@@ -14,8 +14,3 @@ part one asks for depth and horizontal positon and to multiply the two this is s
 ### Part 2
 part 2 introduces aim as another value to determine depth by multiplying the horizontal value by the aim.This can reuse this same code while slightly changing that for the horizontal calculation to modify the depth variable
 
-## Usage
-
-### Part 1
-```bash
-python day2solutionpt1.py
