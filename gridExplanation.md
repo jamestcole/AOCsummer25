@@ -100,13 +100,14 @@ Each tuple represents a direction to move from the current position:
 #### Grid Coordinate System
 
 **Visual representation:**
+```
     j→  0  1  2  3  4
 i ↓
 0      [0,0][0,1][0,2][0,3][0,4]
 1      [1,0][1,1][1,2][1,3][1,4]  
 2      [2,0][2,1][2,2][2,3][2,4]  ← Current: (2,3)
 3      [3,0][3,1][3,2][3,3][3,4]
-
+```
 **From position (2,3), the neighbors are:**
 - UP: (1,3) - one row above
 - DOWN: (3,3) - one row below  
