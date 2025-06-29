@@ -33,15 +33,16 @@ is_low_point = True
 - **is_low_point:** Assume current position is a low point until proven otherwise
 
 ### Adjacent Neighbor Check - Detailed Explanation
-
+```
 for di, dj in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
     ni, nj = i + di, j + dj
-
+```
 #### How the Direction Vectors Work
 
 **The List of Tuples:**
+```
 [(-1, 0), (1, 0), (0, -1), (0, 1)]
-
+```
 Each tuple represents a direction to move from the current position:
 - **First number (di):** Change in row (i direction)
 - **Second number (dj):** Change in column (j direction)
@@ -121,22 +122,25 @@ i ↓
 - **Extensible:** Easy to add diagonal directions by adding more tuples like (-1,-1), (-1,1), (1,-1), (1,1)
 
 ### Boundary Validation & Comparison
+```
 if 0 <= ni < rows and 0 <= nj < cols:
     if int(grid[ni][nj]) <= current:
         is_low_point = False
         break
-
+```
 **Boundary Check:** Ensures neighbor coordinates are within grid bounds
 
 **Low Point Condition:** If ANY neighbor is ≤ current value, it's NOT a low point
 
 ### Result Collection
+```
 if is_low_point:
     low_points.append(current)
-
+```
 ## Example Walkthrough
 
 ### Sample Grid:
+
 2  1  9
 3  5  6  
 9  8  9
